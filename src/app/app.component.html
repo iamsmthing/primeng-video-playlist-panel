@@ -1,4 +1,4 @@
-<p-splitter [style]="{'height': '300px','width':'auto'}"  [minSizes]="[10,0]" [panelSizes]="[45,10]" styleClass="mb-5">
+<p-splitter [style]="{'height': '90vh','width':'auto'}"  [minSizes]="[10,0]" [panelSizes]="[45,10]" styleClass="mb-5">
 	
 	<ng-template pTemplate>
 			<p-splitter layout="vertical" >
@@ -19,11 +19,12 @@
 					</ng-template> 
 			</p-splitter>
 	</ng-template>
-	<ng-template pTemplate>
+	<ng-template pTemplate class="col flex align-items-center justify-content-center">
 		
-		<div class="col flex align-items-center justify-content-center" >
-			Playlist Panel
-			<p-panelMenu [model]="items" [style]="{'width':'auto'}" class="col flex align-items-center justify-content-center"></p-panelMenu>
-		</div>
+		<p-panelMenu [model]="items" ></p-panelMenu>
+			
+		
 </ng-template>
 </p-splitter>
+
+<p-panelMenu [model]="items"></p-panelMenu>
